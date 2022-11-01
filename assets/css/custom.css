@@ -4,4 +4,5 @@
 
 .intro-item {
     background-image: url(../../assets/img/tv.png);
+    border-radius: 0.5rem;
 }
