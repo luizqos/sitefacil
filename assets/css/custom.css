@@ -3,6 +3,21 @@
 }
 
 .intro-item {
-    background-image: url(../../assets/img/tv.png);
-    border-radius: 0.5rem;
+    background-image: radial-gradient(circle at 4.61% 62.16%, #bee4f9 0, #82c5ed 25%, #2ba4e0 50%, #0083d4 75%, #0066c8 100%);
+
+}
+
+.img-png {
+    width: 60%;
+    height: 70%;
+    margin-left: 550px;
+    margin-top: -450px;
+}
+
+.whatsapp {
+    position: fixed;
+    top: 82%;
+    left: 1%;
+    padding: 10px;
+    z-index: 10000000;
 }
