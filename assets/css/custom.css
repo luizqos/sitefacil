@@ -20,12 +20,16 @@
     left: 1%;
     padding: 10px;
     z-index: 10000000;
+    width: 5rem;
 }
 
 .footer-main {
-    background-image: radial-gradient(circle at 4.61% 62.16%, #76c4ee 0, #82c5ed 25%, #2ba4e0 50%, #0083d4 75%, #0066c8 100%);
+    background-color: rgba(4, 97, 143);
 }
 
 .footer-bottom {
-    background-image: radial-gradient(circle at 4.61% 62.16%, #76c4ee 0, #82c5ed 25%, #2ba4e0 50%, #0083d4 75%, #0066c8 100%);
+    background-color: rgba(4, 97, 143);
+}
+.footer-bottom::before {
+    height: 0px;
 }
