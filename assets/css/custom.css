@@ -20,4 +20,16 @@
     left: 1%;
     padding: 10px;
     z-index: 10000000;
+    width: 5rem;
+}
+
+.footer-main {
+    background-color: rgba(4, 97, 143);
+}
+
+.footer-bottom {
+    background-color: rgba(4, 97, 143);
+}
+.footer-bottom::before {
+    height: 0px;
 }
