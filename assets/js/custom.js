@@ -108,16 +108,21 @@
 		btnTopScroll: function() {
 			
 			var btnTop = $('.btn-top');
+			let image = document.getElementById("whatsapp-ico");
 			
 			if ($(this).scrollTop() > 700) {
 
 				btnTop.addClass("active");
+				setTimeout(3000);
+				image.src = ""
 
 			} else {
-
 				btnTop.removeClass("active");
+				setTimeout(3000);
+				image.src = "assets/img/whatsapp.png"
 				
 			}
+			
 
 		},
 
