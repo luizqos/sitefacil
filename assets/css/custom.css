@@ -23,6 +23,11 @@
     width: 5rem;
 }
 
+.whatsapp-footer {
+    width: 3rem;
+    align-content:flex-end;
+}
+
 .footer-main {
     background-color: rgba(4, 97, 143);
 }
