@@ -113,13 +113,12 @@
 			if ($(this).scrollTop() > 700) {
 
 				btnTop.addClass("active");
-				setTimeout(3000);
-				image.src = ""
+				setTimeout(() => {  image.src = ""; }, 3000);
 
 			} else {
 				btnTop.removeClass("active");
-				setTimeout(3000);
-				image.src = "assets/img/whatsapp.png"
+				setTimeout(() => {  image.src = "assets/img/whatsapp.png"; }, 1000);
+				
 				
 			}
 			
