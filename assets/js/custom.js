@@ -117,8 +117,7 @@
 
 			} else {
 				btnTop.removeClass("active");
-				setTimeout(() => {  image.src = "assets/img/whatsapp.png"; }, 1000);
-				
+				 image.src = "assets/img/whatsapp.png";
 				
 			}
 			
