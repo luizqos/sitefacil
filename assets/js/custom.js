@@ -106,26 +106,19 @@
 		},
 
 		btnTopScroll: function() {
-			let contador = 0;
 			var btnTop = $('.btn-top');
 			let image = document.getElementById("whatsapp-ico");
 			
 			if ($(this).scrollTop() > 700) {
 				btnTop.addClass("active");
 				setTimeout(() => {  image.src = ""; }, 5000);
-				contador = 0;
 
 			} else {
-				contador = contador + 1;
 				btnTop.removeClass("active");
-				if (contador === 1){
+				if (image.src !== "assets/img/whatsapp.png"){
 					setTimeout(() => {  image.src = "assets/img/whatsapp.png"; }, 5000);					
 				}
-				console.log('cont', contador);
-				
 			}
-			
-
 		},
 
 		//=== Tab ===\\
