@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fácil IPTV</title>
+    <meta name="description" content="Description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-regular.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-700.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-700.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-600.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2"
+        crossorigin>
+</head>
+
+<body>
+    <main class="main">
+        <div class="main-inner">
+            <!-- Begin mobile main menu -->
+            <nav class="mmm">
+                <div class="mmm-content">
+                    <ul class="mmm-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Planos</a></li>
+                        <li><a href="https://pagamento.faciliptv.com.br">Pagamento</a></li>
+                        <li><a href="https://web.tvprodigital.net/clientarea">Área do Cliente</a></li>
+                        <li><a href="https://proapp.cc/">Aplicativos</a></li>
+                    </ul>
+                </div>
+            </nav><!-- End mobile main menu -->
+            <!-- Begin header -->
+            <header class="header">
+                <!-- Begin header fixed -->
+                <nav class="header-fixed">
+                    <div class="container">
+                        <div class="row flex-nowrap align-items-center justify-content-between">
+                            <div class="col-auto d-block d-lg-none header-fixed-col">
+                                <div class="main-mnu-btn">
+                                    <span class="bar bar-1"></span>
+                                    <span class="bar bar-2"></span>
+                                    <span class="bar bar-3"></span>
+                                    <span class="bar bar-4"></span>
+                                </div>
+                            </div>
+                            <div class="col-auto header-fixed-col">
+                                <!-- Begin logo -->
+                                <a href="/" class="logo" title="Fácil IPTV">
+                                    <img src="assets/img/logo.jpg" width="100px" alt="Fácil IPTV">
+                                </a><!-- End logo -->
+                            </div>
+                            <div class="col-auto header-fixed-col d-none d-lg-block col-static">
+                                <!-- Begin main menu -->
+                                <nav class="main-mnu">
+                                    <ul class="main-mnu-list">
+                                        <li><a href="index.html" data-title="Inicio"><span>Inicio</span></a></li>
+                                        <li><a href="#" data-title="Planos"><span>Planos</span></a></li>
+                                        <li><a href="https://pagamento.faciliptv.com.br"
+                                                data-title="Pagamentos"><span>Pagamentos</span></a></li>
+                                        <li><a href="https://web.tvprodigital.net/clientarea"
+                                                data-title="Área do Cliente"><span>Área do Cliente</span></a></li>
+                                        <li><a href="https://proapp.cc/"
+                                                data-title="Aplicativos"><span>Aplicativos</span></a></li>
+                                    </ul>
+            </header><!-- End header -->
+            <section id="adquirir" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-heading heading-center">
+                                <h5>Detalhes da Compra</h5>
+                            </div>
+                            <form action="#!" method="post" class="order-form">
+                                <h6>Dados Pessoais</h6>
+                                <!-- Begin hidden Field for send form -->
+                                <input type="hidden" name="form_subject" value="Order service">
+                                <!-- End hidden Field for send form -->
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <div class="form-field">
+                                            <label for="order-name" class="form-field-label">Nome</label>
+                                            <input type="text" class="form-field-input" name="orderName" value=""
+                                                onblur="is_name(this)" autocomplete="off" required="required"
+                                                id="order-name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <div class="form-field">
+                                            <label for="order-email" class="form-field-label">Email</label>
+                                            <input type="text" class="form-field-input" name="orderMail" value=""
+                                                onblur="is_email(this)" autocomplete="off" required="required"
+                                                id="order-email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <div class="form-field">
+                                            <label for="order-cpf" class="form-field-label">CPF</label>
+                                            <input type="text" class="form-field-input" onblur="cpfCheck(this)" name="orderCpf"
+                                                onkeyup="cpfCheck(this)" maxlength="14"
+                                                onkeydown="javascript: fMasc( this, mCPF );" value="" autocomplete="off"
+                                                required="required" id="order-cpf">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-field">
+                                            <label for="order-phone" class="form-field-label">Telefone</label>
+                                            <input type="tel" class="form-field-input mask-phone" id="telefone"
+                                                name="orderPhone" value="" minlength="14" maxlength="15" autocomplete="off"
+                                                required="required" id="order-phone">
+                                        </div>
+                                    </div>
+                             </div>
+                             <div class="row justify-content-left"> 
+                                <div class="col-lg-3 col-md-4 col-12">
+                                    <div class="form-btn form-btn-wide">
+                                        <button type="submit" class="btn btn-w240 ripple"><span>Concluir</span></button>
+                                    </div>
+                                </div>
+                             </div>
+                            </form>
+                        </div>
+                    </div>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <div class="form-field">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Plano</th>
+                                                    <th>Qtde.</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Plano Intermediario</td>
+                                                    <td>1</td>
+                                                    <td>26</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tela Adicional</td>
+                                                    <td>1</td>
+                                                    <td>15</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>Valor Total</td>
+                                                    <td></td>
+                                                    <td>41</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Begin footer -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row items">
+                        <div class="col-xl-6 col-lg-3 col-md-5 col-12 item">
+                            <!-- Begin company info -->
+                            <div class="footer-company-info">
+                                <div class="footer-company-top">
+                                    <a href="/" class="logo" title="PathSoft">
+                                        <img data-src="assets/img/logo.jpg" width="115" height="36" class="lazy"
+                                            src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            alt="PathSoft">
+                                    </a>
+                                    <div class="footer-company-desc">
+                                        <p>Com a IPTV da TV Pro Digital você pode assistir de onde quiser, seja do
+                                            Celular, Tablet, Computador ou TV. Tudo isso de maneira online.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End company info -->
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-md-3 col-5 col-lg-2 item">
+                            <div class="footer-item">
+                                <p class="footer-item-heading">Menu</p>
+                                <nav class="footer-nav">
+                                    <ul class="footer-mnu">
+                                        <li><a href="#" class="hover-link" data-title="Inicio"><span>Inicio</span></a>
+                                        </li>
+                                        <li><a href="#" class="hover-link" data-title="Planos"><span>Planos</span></a>
+                                        </li>
+                                        <li><a href="#" class="hover-link"
+                                                data-title="Pagamento"><span>Pagamento</span></a></li>
+                                        <li><a href="#" class="hover-link" data-title="Área do Cliente"><span>Área do
+                                                    Cliente</span></a></li>
+                                        <li><a href="#" class="hover-link"
+                                                data-title="Aplicativos"><span>Aplicativos</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-md-3 col-5 col-lg-2 item">
+                            <div class="footer-item">
+                                <p class="footer-item-heading">Fale Conosco</p>
+                                <nav class="footer-nav">
+                                    <ul class="footer-mnu">
+                                        <a href="https://api.whatsapp.com/send?phone=+5531997853349&text=Olá, Gostaria de contratar o serviço de Iptv"
+                                            target="_blank">
+                                            <img class="whatsapp-footer" src="assets/img/whatsapp.png">
+                                        </a>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row justify-content-between items">
+                        <div class="col-md-auto col-12 item">
+                        </div>
+                        <div class="col-md-auto col-12 item">
+                            <div class="copyright">Copyright &copy;
+                                <script>document.write(new Date().getFullYear())</script> Facil Iptv. Todos os direitos
+                                reservados.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- End footer -->
+
+    </main><!-- End main -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/lozad/lozad.min.js"></script>
+    <script src="assets/libs/device/device.js"></script>
+    <script src="assets/libs/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
+    <script src="assets/libs/jquery-validation-1.19.3/jquery.validate.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/validaCpf.js"></script>
+    <script src="assets/js/validaTelefone.js"></script>
+    <script src="assets/js/validaEmail.js"></script>
+    <script src="assets/js/validaNome.js"></script>
+</body>
+
+</html>
