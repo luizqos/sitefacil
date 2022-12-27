@@ -456,7 +456,7 @@
 			$.validator.addMethod("customemail", function (value, element) {
 				return /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(value);
 			},
-				"The email is not a valid email."
+				"O e-mail não é um e-mail válido."
 			);
 			
 
@@ -477,15 +477,15 @@
 				},
 				messages: {
 					ContactName: {
-					required: "The name field is required.",
+					required: "Nome é obrigatório.",
 					},
 					ContactPhone: {
-					required: "The phone field is required.",
+					required: "Telefone é obrigatório.",
 					},
 					ContactEmail: {
-						required: "The email field is required.",
-						email: "The email field is required.",
-						customemail: "The email is not a valid email."
+						required: "Email é obrigatório.",
+						email: "Email é obrigatório.",
+						customemail: "O e-mail não é um e-mail válido."
 					},
 				},
 				submitHandler: function(form) {
@@ -493,7 +493,7 @@
 					$(form).trigger("reset");
 					$(".form-field").removeClass("focus");
 			
-					alert('Successfully sent!');
+					alert('Enviado com Sucesso!');
 		
 				}
 			});
@@ -508,9 +508,9 @@
 				},
 				messages: {
 					ContactEmail: {
-						required: "The email field is required.",
-						email: "The email field is required.",
-						customemail: "The email is not a valid email."
+						required: "Email é obrigatório.",
+						email: "Email é obrigatório.",
+						customemail: "O e-mail não é um e-mail válido."
 					},
 				},
 				submitHandler: function(form) {
@@ -518,7 +518,7 @@
 					$(form).trigger("reset");
 					$(".form-field").removeClass("focus");
 			
-					alert('Successfully sent!');
+					alert('Enviado com Sucesso!');
 		
 				}
 			});
@@ -535,10 +535,10 @@
 				},
 				messages: {
 					orderName: {
-					required: "The name field is required.",
+					required: "Nome é Obrigatório.",
 					},
 					orderPhone: {
-					required: "The phone field is required.",
+					required: "Telefone é obrigatório.",
 					}
 				},
 				submitHandler: function(form) {
@@ -546,7 +546,7 @@
 					$(form).trigger("reset");
 					$(".form-field").removeClass("focus");
 			
-					alert('Successfully sent!');
+					alert('Enviado com Sucesso!');
 		
 				}
 			});
