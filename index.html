@@ -152,10 +152,10 @@
                             </ul>
                         </div>
                         <footer class="pricing-item-footer">
-                            <a href="https://api.whatsapp.com/send?phone=+5531997853349&text=Olá, Gostaria de contratar o serviço de Iptv - Plano Iniciante" class="btn btn-large btn-with-icon btn-wide ripple">
+                            <button class="btn btn-large btn-with-icon btn-wide ripple" onclick="abreFormularioCadastro('/plano/?idProduto=2')">
                                 <span>Assinar</span>
                                 <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-                            </a>
+                            </button>
                         </footer>
                     </div>
                 </div><!-- End pricing item -->
@@ -210,10 +210,10 @@
                             </ul>
                         </div>
                         <footer class="pricing-item-footer">
-                            <a href="https://api.whatsapp.com/send?phone=+5531997853349&text=Olá, Gostaria de contratar o serviço de Iptv - Plano Intermediário" class="btn btn-large btn-with-icon btn-wide ripple">
+                            <button class="btn btn-large btn-with-icon btn-wide ripple" onclick="abreFormularioCadastro('/plano/?idProduto=3')">
                                 <span>Assinar</span>
                                 <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-                            </a>
+                            </button>
                         </footer>
                     </div>
                 </div><!-- End pricing item -->
@@ -271,10 +271,10 @@
                             </ul>
                         </div>
                         <footer class="pricing-item-footer">
-                            <a href="https://api.whatsapp.com/send?phone=+5531997853349&text=Olá, Gostaria de contratar o serviço de Iptv - Plano Avançado" class="btn btn-large btn-with-icon btn-wide ripple">
+                            <button class="btn btn-large btn-with-icon btn-wide ripple" onclick="abreFormularioCadastro('/plano/?idProduto=4')">
                                 <span>Assinar</span>
                                 <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-                            </a>
+                            </button>
                         </footer>
                     </div>
                 </div>
@@ -358,6 +358,7 @@
 <script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
 <script src="assets/libs/jquery-validation-1.19.3/jquery.validate.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="backend/cadastrar-venda-site/index.js"></script>
 <script>
     let image = document.getElementById("whatsapp-ico");
     setTimeout(() => {  image.src = "assets/img/whatsapp.png"; }, 3000);

@@ -7,21 +7,21 @@
     <meta name="description" content="Description">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-    <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/libs.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/libs.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-regular.woff2" as="font"
+    <link rel="preload" href="/assets/fonts/istok-web-v15-latin/istok-web-v15-latin-regular.woff2" as="font"
         type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-700.woff2" as="font"
+    <link rel="preload" href="/assets/fonts/istok-web-v15-latin/istok-web-v15-latin-700.woff2" as="font"
         type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-700.woff2" as="font"
+    <link rel="preload" href="/assets/fonts/montserrat-v15-latin/montserrat-v15-latin-700.woff2" as="font"
         type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-600.woff2" as="font"
+    <link rel="preload" href="/assets/fonts/montserrat-v15-latin/montserrat-v15-latin-600.woff2" as="font"
         type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2"
+    <link rel="preload" href="/assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2"
         crossorigin>
 </head>
 
@@ -32,7 +32,7 @@
             <nav class="mmm">
                 <div class="mmm-content">
                     <ul class="mmm-list">
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="/index.html">Inicio</a></li>
                         <li><a href="#">Planos</a></li>
                         <li><a href="https://pagamento.faciliptv.com.br">Pagamento</a></li>
                         <li><a href="https://web.tvprodigital.net/clientarea">Área do Cliente</a></li>
@@ -57,14 +57,14 @@
                             <div class="col-auto header-fixed-col">
                                 <!-- Begin logo -->
                                 <a href="/" class="logo" title="Fácil IPTV">
-                                    <img src="assets/img/logo.jpg" width="100px" alt="Fácil IPTV">
+                                    <img src="/assets/img/logo.jpg" width="100px" alt="Fácil IPTV">
                                 </a><!-- End logo -->
                             </div>
                             <div class="col-auto header-fixed-col d-none d-lg-block col-static">
                                 <!-- Begin main menu -->
                                 <nav class="main-mnu">
                                     <ul class="main-mnu-list">
-                                        <li><a href="index.html" data-title="Inicio"><span>Inicio</span></a></li>
+                                        <li><a href="/about-us.html" data-title="Inicio"><span>Inicio</span></a></li>
                                         <li><a href="#" data-title="Planos"><span>Planos</span></a></li>
                                         <li><a href="https://pagamento.faciliptv.com.br"
                                                 data-title="Pagamentos"><span>Pagamentos</span></a></li>
@@ -84,7 +84,7 @@
                             <form id="frm-criaVenda" action="#!" method="post" class="order-form">
                                 <h6>Dados Pessoais</h6>
                                 <!-- Begin hidden Field for send form -->
-                                <input type="hidden" name="form_subject" value="Order service">
+                                <input type="text" id="idProduto" name="idProduto" value="">
                                 <!-- End hidden Field for send form -->
                                 <div class="row justify-content-center">
                                     <div class="col">
@@ -148,21 +148,16 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Plano Intermediario</td>
+                                                    <td id="plano"></td>
                                                     <td>1</td>
-                                                    <td>26</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tela Adicional</td>
-                                                    <td>1</td>
-                                                    <td>15</td>
+                                                    <td id="valorPlano"></td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr>
                                                     <td>Valor Total</td>
                                                     <td></td>
-                                                    <td>41</td>
+                                                    <td id="valorTotal"></td>
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -183,7 +178,7 @@
                             <div class="footer-company-info">
                                 <div class="footer-company-top">
                                     <a href="/" class="logo" title="PathSoft">
-                                        <img data-src="assets/img/logo.jpg" width="115" height="36" class="lazy"
+                                        <img data-src="/assets/img/logo.jpg" width="115" height="36" class="lazy"
                                             src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
                                             alt="PathSoft">
                                     </a>
@@ -248,18 +243,19 @@
 
     </main><!-- End main -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="assets/js/toast.js"></script>
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/libs/lozad/lozad.min.js"></script>
-    <script src="assets/libs/device/device.js"></script>
-    <script src="assets/libs/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
-    <script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
-    <script src="assets/libs/jquery-validation-1.19.3/jquery.validate.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/validaCpf.js"></script>
-    <script src="assets/js/validaTelefone.js"></script>
-    <script src="assets/js/validaEmail.js"></script>
-    <script src="assets/js/validaNome.js"></script>
+    <script src="/assets/js/toast.js"></script>
+    <script src="/assets/libs/jquery/jquery.min.js"></script>
+    <script src="/assets/libs/lozad/lozad.min.js"></script>
+    <script src="/assets/libs/device/device.js"></script>
+    <script src="/assets/libs/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+    <script src="/assets/libs/spincrement/jquery.spincrement.min.js"></script>
+    <script src="/assets/libs/jquery-validation-1.19.3/jquery.validate.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script src="/assets/js/validaCpf.js"></script>
+    <script src="/assets/js/validaTelefone.js"></script>
+    <script src="/assets/js/validaEmail.js"></script>
+    <script src="/assets/js/validaNome.js"></script>
+    <script src="/backend/cadastrar-venda-site/index.js"></script>
 </body>
 
 </html>
